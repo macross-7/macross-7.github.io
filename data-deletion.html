@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperClick - 데이터 삭제 요청 / Data Deletion Request</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a237e 0%, #3949ab 50%, #5c6bc0 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #222;
+        }
+        .container {
+            background: #fff;
+            border-radius: 20px;
+            padding: 48px;
+            max-width: 760px;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            line-height: 1.7;
+        }
+        h1 {
+            color: #1a237e;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: #1a237e;
+            font-size: 20px;
+            margin: 32px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #e8eaf6;
+        }
+        h3 {
+            color: #3949ab;
+            font-size: 16px;
+            margin: 20px 0 8px;
+        }
+        p, li { color: #444; margin-bottom: 8px; }
+        ul, ol { padding-left: 24px; margin-bottom: 12px; }
+        .meta {
+            background: #f5f5f7;
+            border-left: 4px solid #3949ab;
+            padding: 12px 16px;
+            margin: 16px 0 24px;
+            font-size: 14px;
+        }
+        .email {
+            display: inline-block;
+            background: #1a237e;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 8px 0;
+        }
+        .email:hover { background: #303f9f; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #e8eaf6;
+            color: #1a237e;
+            font-weight: 600;
+        }
+        .divider {
+            border: none;
+            border-top: 1px dashed #ccc;
+            margin: 48px 0;
+        }
+        .lang-en h1, .lang-en h2, .lang-en h3 { color: #1a237e; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #888;
+            text-align: center;
+        }
+        .footer a { color: #3949ab; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ============ 한국어 ============ -->
+        <section class="lang-ko">
+            <h1>HyperClick 데이터 삭제 요청</h1>
+            <div class="meta">
+                <strong>앱 이름:</strong> HyperClick - Auto App Clicker<br>
+                <strong>개발자:</strong> Fujii-K-apw<br>
+                <strong>최종 업데이트:</strong> 2026-05-12
+            </div>
+
+            <h2>1. 데이터 삭제 요청 절차</h2>
+            <p>HyperClick은 사용자가 앱 사용 중 수집된 데이터의 삭제를 요청할 수 있는 권리를 보장합니다. 아래 단계를 따라 요청해 주세요.</p>
+            <ol>
+                <li><strong>이메일 작성:</strong> 아래 이메일 주소로 데이터 삭제 요청 메일을 보내주세요.
+                    <br><a class="email" href="mailto:hyperclick.customer@gmail.com?subject=HyperClick%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">hyperclick.customer@gmail.com</a>
+                </li>
+                <li><strong>제목:</strong> <code>HyperClick 데이터 삭제 요청</code></li>
+                <li><strong>본문에 포함할 정보:</strong>
+                    <ul>
+                        <li>Google Play 광고 ID (AAID) — 선택 사항. <em>Android 설정 → Google → 광고 → 광고 ID</em>에서 확인 가능</li>
+                        <li>대략적인 앱 사용 기간 또는 마지막 사용 시점</li>
+                        <li>삭제를 원하는 데이터 유형 (전체 또는 일부)</li>
+                    </ul>
+                </li>
+                <li><strong>처리 기간:</strong> 요청 접수 후 <strong>영업일 기준 30일 이내</strong>에 처리 완료 메일을 발송해 드립니다.</li>
+            </ol>
+
+            <h3>앱 내에서 직접 요청하기</h3>
+            <p>앱을 열어 <strong>설정(⚙️) → 문의하기</strong>를 선택하면 위 이메일 주소가 자동으로 입력된 메일 작성 화면이 열립니다.</p>
+
+            <h2>2. 삭제 및 보관되는 데이터 유형</h2>
+            <p>HyperClick은 회원가입 없이 익명으로 작동하며, 사용자 식별 가능한 개인정보(이름, 연락처, 주소 등)를 수집하지 않습니다. 다음은 광고 및 분석 SDK가 수집하는 데이터입니다.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>데이터 유형</th>
+                        <th>수집 주체</th>
+                        <th>삭제 여부</th>
+                        <th>추가 보관 기간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>광고 ID (AAID)</td>
+                        <td>Google AdMob</td>
+                        <td>요청 시 즉시 삭제</td>
+                        <td>최대 60일 (Google 정책에 따라 익명 집계 데이터로 보관)</td>
+                    </tr>
+                    <tr>
+                        <td>App Instance ID, 앱 상호작용 이벤트</td>
+                        <td>Firebase Analytics</td>
+                        <td>요청 시 30일 이내 삭제</td>
+                        <td>최대 60일 (백업 시스템 자동 삭제 주기)</td>
+                    </tr>
+                    <tr>
+                        <td>크래시 로그, 진단 데이터</td>
+                        <td>Firebase Crashlytics</td>
+                        <td>요청 시 즉시 삭제</td>
+                        <td>최대 90일 (Crashlytics 자동 보관 정책)</td>
+                    </tr>
+                    <tr>
+                        <td>대략적 위치 (IP 기반)</td>
+                        <td>Google AdMob</td>
+                        <td>영구 저장하지 않음</td>
+                        <td>광고 응답 즉시 폐기</td>
+                    </tr>
+                    <tr>
+                        <td>매크로/설정 데이터 (로컬 저장)</td>
+                        <td>사용자 기기</td>
+                        <td>앱 삭제 시 자동 삭제</td>
+                        <td>없음 (서버 전송 안 함)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>즉시 삭제 가능한 셀프 조치</h3>
+            <ul>
+                <li><strong>광고 ID 재설정:</strong> Android 설정 → Google → 광고 → <em>광고 ID 재설정</em> 또는 <em>광고 ID 삭제</em></li>
+                <li><strong>앱 데이터 삭제:</strong> Android 설정 → 앱 → HyperClick → 저장공간 → <em>데이터 삭제</em></li>
+                <li><strong>앱 제거:</strong> 앱을 제거하면 Firebase Instance ID는 즉시 무효화됩니다.</li>
+            </ul>
+        </section>
+
+        <hr class="divider">
+
+        <!-- ============ English ============ -->
+        <section class="lang-en">
+            <h1>HyperClick Data Deletion Request</h1>
+            <div class="meta">
+                <strong>App Name:</strong> HyperClick - Auto App Clicker<br>
+                <strong>Developer:</strong> Fujii-K-apw<br>
+                <strong>Last Updated:</strong> 2026-05-12
+            </div>
+
+            <h2>1. How to Request Data Deletion</h2>
+            <p>HyperClick respects your right to request deletion of any data collected through your use of the app. Follow the steps below.</p>
+            <ol>
+                <li><strong>Send an email</strong> to the address below.
+                    <br><a class="email" href="mailto:hyperclick.customer@gmail.com?subject=HyperClick%20Data%20Deletion%20Request">hyperclick.customer@gmail.com</a>
+                </li>
+                <li><strong>Subject:</strong> <code>HyperClick Data Deletion Request</code></li>
+                <li><strong>Include in the body:</strong>
+                    <ul>
+                        <li>Your Google Advertising ID (AAID) — optional. Found under <em>Android Settings → Google → Ads → Advertising ID</em>.</li>
+                        <li>Approximate usage period or last-used date.</li>
+                        <li>Which data types you want deleted (all or specific).</li>
+                    </ul>
+                </li>
+                <li><strong>Response time:</strong> We will confirm completion within <strong>30 business days</strong> of receiving your request.</li>
+            </ol>
+
+            <h3>Request from inside the app</h3>
+            <p>Open the app, go to <strong>Settings (⚙️) → Contact Us</strong>, and a pre-filled email draft will open.</p>
+
+            <h2>2. Data Types Deleted and Retention Period</h2>
+            <p>HyperClick operates anonymously without account registration and does not collect personally identifiable information (name, phone number, address, etc.). The following is collected by ad and analytics SDKs.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Collected By</th>
+                        <th>Deletion</th>
+                        <th>Retention Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Advertising ID (AAID)</td>
+                        <td>Google AdMob</td>
+                        <td>Deleted immediately on request</td>
+                        <td>Up to 60 days (anonymized aggregate data per Google policy)</td>
+                    </tr>
+                    <tr>
+                        <td>App Instance ID, app interaction events</td>
+                        <td>Firebase Analytics</td>
+                        <td>Deleted within 30 days of request</td>
+                        <td>Up to 60 days (backup system rotation)</td>
+                    </tr>
+                    <tr>
+                        <td>Crash logs, diagnostic data</td>
+                        <td>Firebase Crashlytics</td>
+                        <td>Deleted immediately on request</td>
+                        <td>Up to 90 days (Crashlytics default retention)</td>
+                    </tr>
+                    <tr>
+                        <td>Approximate location (IP-based)</td>
+                        <td>Google AdMob</td>
+                        <td>Not stored permanently</td>
+                        <td>Discarded immediately after ad response</td>
+                    </tr>
+                    <tr>
+                        <td>Macro / config data (local only)</td>
+                        <td>User's device</td>
+                        <td>Removed when app is uninstalled</td>
+                        <td>None (never transmitted to server)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Self-service actions</h3>
+            <ul>
+                <li><strong>Reset Advertising ID:</strong> Android Settings → Google → Ads → <em>Reset advertising ID</em> or <em>Delete advertising ID</em></li>
+                <li><strong>Clear app data:</strong> Android Settings → Apps → HyperClick → Storage → <em>Clear data</em></li>
+                <li><strong>Uninstall the app:</strong> Uninstalling immediately invalidates the Firebase Instance ID.</li>
+            </ul>
+        </section>
+
+        <div class="footer">
+            <a href="index.html">← Back to Home</a> &nbsp;|&nbsp;
+            <a href="https://play.google.com/store/apps/details?id=com.aram.hyperclick">Google Play</a>
+            <p style="margin-top:8px;">© 2026 HyperClick. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
